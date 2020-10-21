@@ -123,6 +123,9 @@ $ cmake ..
 -- Generating done
 -- Build files have been written to: /home/matrim/workspace/cmake-examples/01-basic/E-installing/build
 
+In Windows, you need use Release for Install
+$ cmake --build . -config Release 
+
 $ make
 Scanning dependencies of target cmake_examples_inst
 [ 50%] Building CXX object CMakeFiles/cmake_examples_inst.dir/src/Hello.cpp.o
@@ -132,6 +135,10 @@ Scanning dependencies of target cmake_examples_inst_bin
 [100%] Building CXX object CMakeFiles/cmake_examples_inst_bin.dir/src/main.cpp.o
 Linking CXX executable cmake_examples_inst_bin
 [100%] Built target cmake_examples_inst_bin
+
+
+InWindows, you need to open terminal as a admin first.
+$ cmake --install .
 
 $ sudo make install
 [sudo] password for matrim:
